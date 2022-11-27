@@ -1,0 +1,47 @@
+@mixin nav-bar {
+    background-color:  $tertiaire;
+    height: 120px;
+}
+
+@mixin bouton {
+    width: 190px;
+    height: 30px;
+    border: 2px solid $secondaire;
+    border-radius: 15px;
+    background-color: $primaire;
+    @include center;
+    box-shadow: 4px 4px 4px rgba($secondaire,0.66);
+    cursor: pointer;
+}
+
+@mixin bouton-moyen {
+    width: 100px;
+    height: 30px;
+    border: 2px solid $secondaire;
+    border-radius: 15px;
+    background-color: $primaire;
+    @include center;
+    box-shadow: 4px 4px 4px rgba($secondaire,0.66);
+    cursor: pointer;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin logoPart {
+    display: flex;
+    flex-direction: column;   
+}
+
+@mixin sanchez {
+    font-family: 'Sanchez', serif;
+    font-size: 16px;
+}
+
+@mixin source {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
+}
